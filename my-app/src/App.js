@@ -6,9 +6,9 @@ import './Css/stylesApp.css';
 
 //Компонеты используемые
 import Login from './Components/Auth/Login';
-import Register from './Components/Auth/Register';
 import Dashboard from './Components/Dashboard/index';
-
+import RegisterMain from './Components/Auth/RegisterMain';
+import RegisterTeacher from './Components/Auth/RegisterTeacher';
 
 
 const fakeAuth = {//установка true или false для открытия или закрытия доступа для приватных роутеров
@@ -47,7 +47,8 @@ class App extends Component {
         const component = (
             <Switch>
                 <Route path="/login" component={Login} />
-                <Route path="/register" component={Register} />
+                <Route path="/register" component={RegisterMain} />
+                <Route path="/RegisterTeacher" component={RegisterTeacher} />
                 <PrivateRoute exact path="/" component={Dashboard} />
                 <PrivateRoute path="/dashboard/:id" component={Dashboard} />
             </Switch>

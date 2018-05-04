@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { Link, Redirect, BrowserRouter, Route } from 'react-router-dom';
 import { Form, FormGroup, Label, Input,Container, Row, Col, Button } from 'reactstrap';
+//import axios from 'axios';
 
 
 import { connect } from 'react-redux';//присоединяем компонент к Redux
