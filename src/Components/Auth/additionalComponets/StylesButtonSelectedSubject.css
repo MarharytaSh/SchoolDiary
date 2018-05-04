@@ -17,7 +17,9 @@ div#search input[type=button]{/*общий с ButtonSelectedSubject*/
 div#search a{
     color: #222222;
 }
-
+div#search input[type=text]{
+    outline:none;
+}
 div#search a.addBackground{
     background-color:  rgb(0, 123,255);
     pointer-events: none;
